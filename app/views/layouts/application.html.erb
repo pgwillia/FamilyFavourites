@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FamilyFavourites</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
+    <title>Family Favourites</title>
+  </head>
   <body>
-    <%= yield %>
+    <header>
+      <nav class="navbar fixed-top">
+        <%= link_to 'Family Favourites', root_path, class: 'navbar-brand' %>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="sign_in">Sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <%= yield %>
+    </main>
+    <footer class="footer">
+      <div class="container"
+        <span class="text-muted">Tricia Jenkins 2018</span>
+      </div>
+    </footer>
   </body>
 </html>

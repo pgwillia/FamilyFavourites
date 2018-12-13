@@ -1,0 +1,20 @@
+$porcelain: #eaeeee;
+$jaffa: #ed9a4b;
+$mojo: #c8533f;
+$manatee: #8a84ab;
+$san-juan: #27516c;
+$aspargus: #71934b;
+$tango: #ef8313;
+$pomegranate: #f44336;
+
+$theme-colors: (
+  "primary": $mojo,
+  "info": $san-juan,
+  "success": $aspargus,
+  "warning": $tango,
+  "danger": $pomegranate,
+  "secondary": $manatee,
+  "light": $jaffa,
+  "dark": $san-juan,
+  "white": $porcelain
+);
