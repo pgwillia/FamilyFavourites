@@ -13,25 +13,25 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :recipe_title %>
+    <%= form.text_field :title, id: :recipe_title, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :source %>
-    <%= form.text_field :source, id: :recipe_source %>
+    <%= form.text_field :source, id: :recipe_source, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :ingredients %>
-    <%= form.text_area :ingredients, id: :recipe_ingredients %>
+    <%= form.text_area :ingredients, id: :recipe_ingredients, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :method %>
-    <%= form.text_area :method, id: :recipe_method %>
+    <%= form.text_area :method, id: :recipe_method, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-primary mt-3 text-white' %>
   </div>
 <% end %>

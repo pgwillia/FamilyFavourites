@@ -1,24 +1,33 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
-</p>
-
-<p>
-  <strong>Source:</strong>
-  <%= @recipe.source %>
-</p>
-
-<p>
-  <strong>Ingredients:</strong>
-  <%= @recipe.ingredients %>
-</p>
-
-<p>
-  <strong>Method:</strong>
-  <%= @recipe.method %>
-</p>
-
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+<div class="nav">
+  <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+  <%= link_to 'Back', recipes_path %>
+</div>
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 font-italic"><%= @recipe.title %></h1>
+    <p class="lead my-3">Source: <%= @recipe.source %></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-body">
+      <strong class="d-inline-block mb-2 text-secondary">Ingredients</strong>
+      <ul>
+        <% @recipe.ingredients.each_line do |ingredient| %>
+          <li class="text-dark"><%= ingredient %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-body">
+      <strong class="d-inline-block mb-2 text-secondary">Method</strong>
+      <ol>
+        <% @recipe.method.each_line do |direction| %>
+          <li class="text-dark"><%= direction %></li>
+        <% end %>
+      </ol>
+    </div>
+  </div>
+</div>

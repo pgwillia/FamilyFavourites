@@ -1,20 +1,21 @@
-$porcelain: #eaeeee;
-$jaffa: #ed9a4b;
-$mojo: #c8533f;
-$manatee: #8a84ab;
-$san-juan: #27516c;
-$aspargus: #71934b;
-$tango: #ef8313;
+$black-haze: #fafbfb;
+$golden-sand: #f5d17f;
+$polo-blue: #93b3d7;
+$tradewind: #63d1b5;
+$waikawa-gray: #5a7a96;
+$aqua-forest: #61b079;
+$anzac: #dfa041;
 $pomegranate: #f44336;
 
 $theme-colors: (
-  "primary": $mojo,
-  "info": $san-juan,
-  "success": $aspargus,
-  "warning": $tango,
+  "default": #999999,
+  "primary": $polo-blue,
+  "info": $waikawa-gray,
+  "success": $aqua-forest,
+  "warning": $anzac,
   "danger": $pomegranate,
-  "secondary": $manatee,
-  "light": $jaffa,
-  "dark": $san-juan,
-  "white": $porcelain
+  "secondary": $tradewind,
+  "light": $golden-sand,
+  "dark": $waikawa-gray,
+  "white": $black-haze
 );
