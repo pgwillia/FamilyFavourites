@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
+gem 'bcrypt', '3.1.12'
+gem 'puma', '3.9.1'
+gem 'rails', '5.1.6'
+
 gem 'bootstrap', '~> 4.1', '>= 4.1.3'
 gem 'coffee-rails', '4.2.2'
 gem 'font-awesome-sass', '~> 5.5.0'
 gem 'jbuilder',     '2.7.0'
 gem 'jquery-rails', '4.3.1'
-gem 'puma',         '3.9.1'
-gem 'rails',        '5.1.6'
 gem 'sass-rails',   '5.0.6'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
@@ -14,8 +16,8 @@ gem 'uglifier',     '3.2.0'
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'rubocop', '~> 0.61.1'
-  gem 'sqlite3', '1.3.13'
   gem 'simplecov', '~> 0.16.1', require: false
+  gem 'sqlite3', '1.3.13'
 end
 
 group :development do
@@ -31,7 +33,7 @@ group :test do
   gem 'minitest',                 '5.10.3'
   gem 'minitest-reporters',       '1.1.14'
   gem 'rails-controller-testing', '1.0.2'
-  
+
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver', require: false
 end
