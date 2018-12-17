@@ -1,25 +1,22 @@
 language: ruby
-
 services:
-  - postgresql
-  
+- postgresql
 rvm:
 - 2.5
-
 cache: bundler
-bundler_args: --with travis --without development production --jobs=3 --retry=3
-
+bundler_args: "--with travis --without development production --jobs=3 --retry=3"
 before_script:
-  - "cp ./config/.travis.database.yml ./config/database.yml"
-  - RAILS_ENV=test bundle exec rails db:create
-  - RAILS_ENV=test bundle exec rails db:migrate
-
+- cp ./config/.travis.database.yml ./config/database.yml
+- RAILS_ENV=test bundle exec rails db:create
+- RAILS_ENV=test bundle exec rails db:migrate
 script:
-  - bundle exec rails test
-  - bundle exec rubocop
-
+- bundle exec rails test
+- bundle exec rubocop
 deploy:
   provider: heroku
   api_key:
-    secure: DfeUSdQbfv5sPEuZzCJjpObAN0fjhndMphtdSmSJeKZUU91/Pau0IZjF9L46izRFKw/fUO2FR/gPLDvCzqoQLAmpDSdHg4cdeHdBajE8DANtRPK4zE+k1t2KvU7iPkBVEg9FvHibGHYkiRjkb48RXKsCMt+C6Apj6THaDhKxbyR94QOhr6KRb0fS6z14h01CrhGgpM2U4Na9XRhNgrLnupzGXhJUdxmG3XZdwWkFG1MTMU+44UvoW0qtgkD8ZwXIs0yEsXedjeaK9l4D3JGD864oXu9CUOMsBlsyXO8/JUnl2X1jWHfMQaggOdJ2UOG9jq/gQmWzGvnU/7vtgNKX+Qkkpuxb1s7JoUNvurYYFdNnliqSEbnhnD4PLvfumeCqRLKP1sLp1x744JPyrEzuFyG9rwpC0Wc9epwi9tFnUUDSDsDlJiQKLPwze98k8brqq/jpy0BC18V48HpNUH0I+BTdD3NbuDHGmp4JrP6+emJ0lKqOtxgVexBnqMx3qcvL2e3aGSDC9Qmtmlqf9pq6ummMTiKUxsTvTtEuuvVQe18VLIOLfewmVqRFNKRAg6ognoLaMd3uHMf6gkwNHGTulgQWBWGPh4cTivKwCiMWOIlQA+O4n+IHFqay6TrqnT5FyBaMElITpVE+ER4IjaU+UovAE0mJEomvtqFrzve/oRc=
-  run: "rake db:migrate"
+    secure: usHJ2KQ+xHv30Mx/tpB3tDRCUC3VVAllUtj0aTjNhrEDkomYnxx3kawUnN2RTzvo3eKep6cFrK4/U+oxtGDv9O4Drw77bbxZ0GkjkWWCGmqeYU6uglb3G42nFmEMU6vn04KKAN4Y3pEaosiLUZFn3eLDYKdwTFrGxzQle99/dK6wkKbkXSBOGF3Z7libM2O64HuLCQKzD3S5gTXvNAYUbW8syKetGz5qYCS5iqd8PK5mhxEwAdYooXYzSgyOE5WoIiRsu0lB04lHZwc/Vg3zbVzXE5Sw9rbnDx7lcUTvxNcDsqRZU3lxUnQWsXqNvH20VwONLzejnsX7l0XRfTDV0+T2EOCNeH+m5w+0SfoJatIdydLnC/iNMIh3kIQ0jm1091uGFuYtklvDKKM4XVlrQJePgX0aGZQoHPaTcFxgVKEksPcfaSAsodq9mUqNTTF0B7ohoXLPdxisetLLLO+GNenD4fhcvpfKqkTEyBoyd9qAOWH7io5szJNbgviAGjAPlKF86fJtnPVe0jwnxcwacPPHiUAU4OWgxOc6ul0SVxk7+EFSdjet9ymcGqDvh4zfSdFceAf7tbD5/wIMg1DLzkZw/mnOcHXKW3g5sORgrAMM+sxk8jGc4ND3Yq6ii/O0LLE4uPxdykdeDZs7hRKxtNjcf47Eq5aPCwQFKyVRQBc=
+  run: rake db:migrate
+  app: family-favourites
+  on:
+    repo: pgwillia/FamilyFavourites
