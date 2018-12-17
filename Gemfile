@@ -32,7 +32,7 @@ group :test do
   gem 'rails-controller-testing', '1.0.2'
 end
 
-group :production do
+group :production, :travis do
   gem 'pg', '0.18.4'
 end
 
