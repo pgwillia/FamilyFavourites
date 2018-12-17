@@ -10,13 +10,5 @@ before_script:
 - RAILS_ENV=test bundle exec rails db:create
 - RAILS_ENV=test bundle exec rails db:migrate
 script:
-- bundle exec rails test
-- bundle exec rubocop
-deploy:
-  provider: heroku
-  api_key:
-    secure: usHJ2KQ+xHv30Mx/tpB3tDRCUC3VVAllUtj0aTjNhrEDkomYnxx3kawUnN2RTzvo3eKep6cFrK4/U+oxtGDv9O4Drw77bbxZ0GkjkWWCGmqeYU6uglb3G42nFmEMU6vn04KKAN4Y3pEaosiLUZFn3eLDYKdwTFrGxzQle99/dK6wkKbkXSBOGF3Z7libM2O64HuLCQKzD3S5gTXvNAYUbW8syKetGz5qYCS5iqd8PK5mhxEwAdYooXYzSgyOE5WoIiRsu0lB04lHZwc/Vg3zbVzXE5Sw9rbnDx7lcUTvxNcDsqRZU3lxUnQWsXqNvH20VwONLzejnsX7l0XRfTDV0+T2EOCNeH+m5w+0SfoJatIdydLnC/iNMIh3kIQ0jm1091uGFuYtklvDKKM4XVlrQJePgX0aGZQoHPaTcFxgVKEksPcfaSAsodq9mUqNTTF0B7ohoXLPdxisetLLLO+GNenD4fhcvpfKqkTEyBoyd9qAOWH7io5szJNbgviAGjAPlKF86fJtnPVe0jwnxcwacPPHiUAU4OWgxOc6ul0SVxk7+EFSdjet9ymcGqDvh4zfSdFceAf7tbD5/wIMg1DLzkZw/mnOcHXKW3g5sORgrAMM+sxk8jGc4ND3Yq6ii/O0LLE4uPxdykdeDZs7hRKxtNjcf47Eq5aPCwQFKyVRQBc=
-  run: rake db:migrate
-  app: family-favourites
-  on:
-    repo: pgwillia/FamilyFavourites
+  - bundle exec rails test
+  - bundle exec rubocop
