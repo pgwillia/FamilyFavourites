@@ -1,4 +1,5 @@
 # README
+[![Build Status](https://travis-ci.com/pgwillia/FamilyFavourites.svg?branch=master)](https://travis-ci.com/pgwillia/FamilyFavourites)
 
 This application is to store and share family favourite recipes.
 

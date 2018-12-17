@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap', '~> 4.1', '>= 4.1.3'
 gem 'coffee-rails', '4.2.2'
+gem 'font-awesome-sass', '~> 5.5.0'
 gem 'jbuilder',     '2.7.0'
 gem 'jquery-rails', '4.3.1'
 gem 'puma',         '3.9.1'
@@ -9,7 +10,6 @@ gem 'rails',        '5.1.6'
 gem 'sass-rails',   '5.0.6'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
-gem 'font-awesome-sass', '~> 5.5.0'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
@@ -32,7 +32,7 @@ group :test do
   gem 'rails-controller-testing', '1.0.2'
 end
 
-group :production do
+group :production, :travis do
   gem 'pg', '0.18.4'
 end
 
