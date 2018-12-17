@@ -15,6 +15,7 @@ group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'rubocop', '~> 0.61.1'
   gem 'sqlite3', '1.3.13'
+  gem 'simplecov', '~> 0.16.1', require: false
 end
 
 group :development do
@@ -30,6 +31,9 @@ group :test do
   gem 'minitest',                 '5.10.3'
   gem 'minitest-reporters',       '1.1.14'
   gem 'rails-controller-testing', '1.0.2'
+  
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver', require: false
 end
 
 group :production, :travis do
