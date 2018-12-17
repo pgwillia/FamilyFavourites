@@ -9,6 +9,7 @@ AllCops:
   Exclude:
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'db/schema.rb'
   ExtraDetails: true
   TargetRubyVersion: 2.5
 
