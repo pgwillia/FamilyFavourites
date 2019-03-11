@@ -4,7 +4,7 @@ gem 'bcrypt', '3.1.12'
 gem 'puma', '3.9.1'
 gem 'rails', '5.1.6'
 
-gem 'bootstrap', '~> 4.1', '>= 4.1.3'
+gem "bootstrap", ">= 4.3.1"
 gem 'coffee-rails', '4.2.2'
 gem 'font-awesome-sass', '~> 5.5.0'
 gem 'jbuilder',     '2.7.0'
