@@ -10,7 +10,7 @@ gem 'font-awesome-sass', '~> 5.9.0'
 gem 'jbuilder',     '2.7.0'
 gem 'jquery-rails', '4.3.1'
 gem 'sass-rails',   '6.0.0'
-gem 'turbolinks',   '5.0.1'
+gem 'turbolinks',   '5.2.0'
 gem 'uglifier',     '3.2.0'
 
 group :development, :test do
