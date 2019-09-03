@@ -11,7 +11,7 @@ gem 'jbuilder',     '2.7.0'
 gem 'jquery-rails', '4.3.1'
 gem 'sass-rails',   '6.0.0'
 gem 'turbolinks',   '5.2.0'
-gem 'uglifier',     '3.2.0'
+gem 'uglifier',     '4.1.20'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
