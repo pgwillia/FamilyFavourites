@@ -32,7 +32,7 @@ group :test do
   gem 'guard-minitest',           '2.4.6'
   gem 'minitest',                 '5.10.3'
   gem 'minitest-reporters',       '1.1.14'
-  gem 'rails-controller-testing', '1.0.2'
+  gem 'rails-controller-testing', '1.0.4'
 
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver', require: false
