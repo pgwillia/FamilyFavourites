@@ -9,7 +9,7 @@ gem 'coffee-rails', '4.2.2'
 gem 'font-awesome-sass', '~> 5.9.0'
 gem 'jbuilder',     '2.7.0'
 gem 'jquery-rails', '4.3.1'
-gem 'sass-rails',   '5.0.6'
+gem 'sass-rails',   '6.0.0'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
 
