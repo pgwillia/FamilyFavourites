@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'bcrypt', '3.1.12'
+gem 'bcrypt', '3.1.13'
 gem 'puma', '4.1.0'
 gem 'rails', '5.1.6.2'
 
