@@ -6,7 +6,7 @@ gem 'rails', '5.1.6.2'
 
 gem 'bootstrap', '>= 4.3.1'
 gem 'coffee-rails', '4.2.2'
-gem 'font-awesome-sass', '~> 5.9.0'
+gem 'font-awesome-sass', '~> 5.10.2'
 gem 'jbuilder',     '2.9.1'
 gem 'jquery-rails', '4.3.5'
 gem 'sass-rails',   '6.0.0'
