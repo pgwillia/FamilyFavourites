@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt', '3.1.13'
-gem 'puma', '4.1.1'
+gem 'puma', '4.2.0'
 gem 'rails', '5.1.6.2'
 
 gem 'bootstrap', '>= 4.3.1'
