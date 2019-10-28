@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bcrypt', '3.1.13'
 gem 'puma', '4.1.1'
-gem 'rails', '5.1.6.2'
+gem 'rails', '6.0.0'
 
 gem 'bootstrap', '>= 4.3.1'
 gem 'coffee-rails', '4.2.2'
