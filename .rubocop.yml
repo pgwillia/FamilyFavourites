@@ -10,8 +10,13 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - 'db/schema.rb'
+    - 'bin/*'
+    - 'node_modules/**/*'
   ExtraDetails: true
   TargetRubyVersion: 2.5
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
 
 # readability is Actually Good
 Layout/EmptyLinesAroundClassBody:
