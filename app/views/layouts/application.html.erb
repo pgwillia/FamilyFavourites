@@ -17,9 +17,6 @@
       <nav class="navbar navbar-dark bg-primary fixed-top rounded">
         <%= link_to 'Family Favourites', root_path, class: 'navbar-brand' %>
         <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="sign_in">Sign in</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -27,7 +24,7 @@
       <%= yield %>
     </main>
     <footer class="row justify-content-center bg-primary rounded">
-        <span class="text-white">Tricia Jenkins 2018</span>
+        <span class="text-white">Tricia Jenkins - <%= Time.now.year %></span>
     </footer>
   </body>
 </html>
