@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :recipe_yield %>
+    <%= form.text_field :recipe_yield, id: :recipe_yield, class: 'form-control' %>
+  </div>
+
+  <div class="field">
     <%= form.label :ingredients %>
     <%= form.text_area :ingredients, id: :recipe_ingredients, class: 'form-control' %>
   </div>
