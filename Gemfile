@@ -12,7 +12,7 @@ gem 'font-awesome-sass', '~> 5.9.0'
 gem 'jbuilder',     '2.9.1'
 gem 'jquery-rails', '4.3.5'
 gem 'sass-rails',   '6.0.0'
-gem 'turbolinks',   '5.2.0'
+gem 'turbolinks',   '5.2.1'
 gem 'uglifier',     '4.2.0'
 
 group :development, :test do
