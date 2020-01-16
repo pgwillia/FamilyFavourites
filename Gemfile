@@ -3,16 +3,16 @@ ruby '2.5.5'
 
 gem 'bcrypt', '3.1.13'
 gem 'puma', '4.3.1'
-gem 'rails', '6.0.0'
-gem 'webpacker', '~> 4.0', '>= 4.0.7'
+gem 'rails', '6.0.2.1'
+gem 'webpacker', '~> 4.0', '>= 4.2.2'
 
 gem 'bootstrap', '>= 4.3.1'
-gem 'coffee-rails', '4.2.2'
-gem 'font-awesome-sass', '~> 5.9.0'
+gem 'coffee-rails', '5.0.0'
+gem 'font-awesome-sass', '~> 5.12.0'
 gem 'jbuilder',     '2.9.1'
 gem 'jquery-rails', '4.3.5'
 gem 'sass-rails',   '6.0.0'
-gem 'turbolinks',   '5.2.0'
+gem 'turbolinks',   '5.2.1'
 gem 'uglifier',     '4.2.0'
 
 group :development, :test do
@@ -23,17 +23,17 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen',                '3.1.5'
+  gem 'listen',                '3.2.1'
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
-  gem 'web-console',           '3.7.0'
+  gem 'web-console',           '4.0.1'
 end
 
 group :test do
   gem 'guard',                    '2.16.1'
   gem 'guard-minitest',           '2.4.6'
   gem 'minitest',                 '5.13.0'
-  gem 'minitest-reporters',       '1.3.8'
+  gem 'minitest-reporters',       '1.4.2'
   gem 'rails-controller-testing', '1.0.4'
 
   gem 'capybara', '~> 3.29'
