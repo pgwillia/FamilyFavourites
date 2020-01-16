@@ -33,7 +33,7 @@ group :test do
   gem 'guard',                    '2.16.1'
   gem 'guard-minitest',           '2.4.6'
   gem 'minitest',                 '5.13.0'
-  gem 'minitest-reporters',       '1.3.8'
+  gem 'minitest-reporters',       '1.4.2'
   gem 'rails-controller-testing', '1.0.4'
 
   gem 'capybara', '~> 3.29'
