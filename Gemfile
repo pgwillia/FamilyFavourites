@@ -3,7 +3,7 @@ ruby '2.5.5'
 
 gem 'bcrypt', '3.1.13'
 gem 'puma', '4.3.3'
-gem 'rails', '6.0.2.1'
+gem 'rails', '6.0.2.2'
 gem 'webpacker', '~> 4.0', '>= 4.2.2'
 
 gem 'bootstrap', '>= 4.3.1'
