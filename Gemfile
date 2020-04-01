@@ -17,7 +17,7 @@ gem 'uglifier',     '4.2.0'
 
 group :development, :test do
   gem 'byebug',  '11.1.1', platform: :mri
-  gem 'rubocop', '~> 0.80.1'
+  gem 'rubocop', '~> 0.81.0'
   gem 'simplecov', '~> 0.18.5', require: false
   gem 'sqlite3', '1.4.2'
 end
