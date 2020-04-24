@@ -16,7 +16,7 @@ gem 'turbolinks',   '5.2.1'
 gem 'uglifier',     '4.2.0'
 
 group :development, :test do
-  gem 'byebug',  '11.1.1', platform: :mri
+  gem 'byebug',  '11.1.3', platform: :mri
   gem 'rubocop', '~> 0.82.0'
   gem 'simplecov', '~> 0.18.5', require: false
   gem 'sqlite3', '1.4.2'
