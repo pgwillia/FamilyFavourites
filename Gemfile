@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.5.5'
 
 gem 'bcrypt', '3.1.13'
-gem 'puma', '4.3.3'
+gem 'puma', '4.3.4'
 gem 'rails', '6.0.2.2'
 gem 'webpacker', '~> 5.1'
 
