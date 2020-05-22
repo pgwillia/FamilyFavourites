@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.5'
+ruby '2.5.8'
 
 gem 'bcrypt', '3.1.13'
 gem 'puma', '4.3.3'
