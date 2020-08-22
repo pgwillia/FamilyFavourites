@@ -8,7 +8,7 @@ gem 'webpacker', '~> 5.1'
 
 gem 'bootstrap', '>= 4.3.1'
 gem 'coffee-rails', '5.0.0'
-gem 'font-awesome-sass', '~> 5.12.0'
+gem 'font-awesome-sass', '~> 5.13.0'
 gem 'jbuilder',     '2.10.0'
 gem 'jquery-rails', '4.3.5'
 gem 'sass-rails',   '6.0.0'
