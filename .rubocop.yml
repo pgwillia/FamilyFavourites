@@ -39,7 +39,7 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: true
   Max: 120 # default is 80
 
@@ -56,10 +56,6 @@ Metrics/ModuleLength:
 # A complexity metric geared towards measuring complexity for a human reader.
 Metrics/PerceivedComplexity:
   Enabled: false
-
-# indentation is an endangered resource
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
 
 Style/Documentation:
   Enabled: false
