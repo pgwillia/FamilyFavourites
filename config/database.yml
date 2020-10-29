@@ -21,5 +21,14 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  timeout: 5000
+  username: <%= ENV['DB_USER'] || 'postgres' %>
+  password: <%= ENV['DB_PASSWORD'] || 'mysecretpassword' %>
+  host: <%= ENV['DB_HOST'] || 'localhost' %>
+  database: familyfavourites
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch('PUMA_MAX_THREADS') { 5 } %>
+  url: <%= Rails.application.secrets.database_url %>
