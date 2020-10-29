@@ -2,7 +2,7 @@ language: ruby
 services:
 - postgresql
 rvm:
-- 2.5
+- 2.6
 cache: bundler
 bundler_args: "--with travis --without development production --jobs=3 --retry=3"
 before_script:
