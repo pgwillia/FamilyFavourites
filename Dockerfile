@@ -21,6 +21,9 @@ ENV APP_ROOT /app
 RUN mkdir -p $APP_ROOT
 WORKDIR $APP_ROOT
 
+RUN mkdir -p tmp/pids
+RUN touch tmp/pids/server.pid
+
 # Preinstall gems in an earlier layer so we don't reinstall every time any file changes.
 COPY Gemfile  $APP_ROOT
 COPY Gemfile.lock $APP_ROOT
