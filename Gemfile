@@ -17,7 +17,7 @@ gem 'uglifier', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', '>= 11.1.3'
-  gem 'rubocop', '~> 1.12'
+  gem 'rubocop', '~> 1.13'
   gem 'simplecov', '~> 0.21.2', require: false
   gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 end
