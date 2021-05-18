@@ -4,7 +4,7 @@ ruby '2.6.6'
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'puma', '~> 5.3'
 gem 'rails', '~> 6.1'
-gem 'webpacker', '~> 5.3'
+gem 'webpacker', '~> 5.4'
 
 gem 'bootstrap', '>= 4.3.1'
 gem 'coffee-rails', '~> 5.0'
