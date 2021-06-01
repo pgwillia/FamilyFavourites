@@ -4,7 +4,7 @@ ruby '2.6.6'
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'puma', '~> 5.3'
 gem 'rails', '~> 6.1'
-gem 'webpacker', '~> 5.3'
+gem 'webpacker', '~> 5.4'
 
 gem 'bootstrap', '>= 4.3.1'
 gem 'coffee-rails', '~> 5.0'
@@ -17,7 +17,7 @@ gem 'uglifier', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', '>= 11.1.3'
-  gem 'rubocop', '~> 1.14'
+  gem 'rubocop', '~> 1.16'
   gem 'simplecov', '~> 0.21.2', require: false
   gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 end
@@ -30,7 +30,7 @@ group :development do
 end
 
 group :test do
-  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard', '~> 2.17'
   gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
   gem 'mini_racer', '~> 0.4.0'
   gem 'minitest', '~> 5.14', '>= 5.14.2'
