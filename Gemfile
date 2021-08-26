@@ -30,7 +30,7 @@ group :development do
 end
 
 group :test do
-  gem 'guard', '~> 2.17'
+  gem 'guard', '~> 2.18'
   gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
   gem 'mini_racer', '~> 0.4.0'
   gem 'minitest', '~> 5.14', '>= 5.14.2'
