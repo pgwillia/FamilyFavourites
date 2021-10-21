@@ -38,7 +38,7 @@ group :test do
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 
   gem 'capybara', '~> 3.33'
-  gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7', require: false
+  gem 'selenium-webdriver', '~> 4.0', require: false
 end
 
 group :production, :travis do
